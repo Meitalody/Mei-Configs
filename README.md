@@ -3,7 +3,7 @@
   <br>
   Mei Configs
   <br>
-  <a href="https://github.com/MeiRiver/Mei-Configs/archive/refs/heads/APB.zip">Download</a>
+  <a href="https://github.com/Meitalody/Mei-Configs/archive/refs/heads/APB.zip">Download</a>
 </p>
 <p align="center">
   <picture>
@@ -12,7 +12,7 @@
     <img alt="Discord" width=10%>
   </picture>
   <br>
-  MeiRiver
+  Meitalody
 </p>
 
 # About
