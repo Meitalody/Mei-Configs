@@ -26,10 +26,11 @@ Feel free to add or remove any feature you like ^.^**
 
 # How To Install
 > [!IMPORTANT]
-> **Repair the game if you previously had used any other configs.  
-> Reinstall the configs whenever you update or repair the game.**
+> **Repair the game if you previously had used any other configs and delete the GER localization folder from the game directory.  
+> Reinstall the configs whenever you update or repair the game.  
+> Use the launcher ONLY when you need to update or repair the game!**
 
-1. **Copy and Paste `APB Reloaded` inside your game installation path, usually located at `C:\Program Files (x86)\Steam\steamapps\common` or `C:\Program Files (x86)\GamersFirst`**
+1. **Copy and Paste my `APB Reloaded` folder inside your game installation path, usually located at `C:\Program Files (x86)\Steam\steamapps\common` or `C:\Program Files (x86)\GamersFirst`**
 2. **Create a shortcut of APB.exe, you can find it inside the `Binaries` folder.**
 3. **Right-Click on the shortcut, go to `Properties` find `Target` and add `-nomovies -language=1031` at the end of the line.**
 4. **Example `Target: "C:\Program Files (x86)\GamersFirst\APB Reloaded\Binaries\APB.exe" -nomovies -language=1031`**
@@ -51,7 +52,7 @@ If you swap preset while playing you must change district to make some changes e
 |Name|Default|Description|
 |:---:|:---:|:---:|
 |Resolution|1920x1080|Ultra-Low resolutions are now available in the game options.|
-|Smooth Frame Rate|ON|Enabled: Framerate is capped at 128 to avoid an issue known as Sliding.<br>Disabled: Framerate is uncapped.<br>If you want a custom FPS cap go to `Engine\Config` open `BaseEngine.ini` with Notepad and set `MaxSmoothedFrameRate=128` and `MaxClientFrameRate=0` to your desired values.|
+|Smooth Frame Rate|OFF|Enabled: Framerate is capped at 128.<br>Disabled: Framerate is uncapped.<br>If you want a custom FPS cap go to `Engine\Config` open `BaseEngine.ini` with Notepad and set `MaxClientFrameRate=0` to your desired value.|
 |Double Buffering|OFF|Depending on your hardware you may want to enable it in the game options.<br>It will give you a significant FPS boost but at the cost of an increased input latency.|
 |Bloom|ON|To keep the transparent background without the Bloom effect make sure this is enabled in the game options then go to `Engine\Config` open `BaseEngine.ini` with Notepad and put `;` before `DefaultPostProcessName=APBPostEffectMaterials.APBPostEffect_Process`|
 |Muzzle Flash|ON|To disable go to `APBGame\Config` open `DefaultGame.ini` with Notepad and set the following line:<br>`m_bEnableMuzzleFlash=true` >>> `m_bEnableMuzzleFlash=false`|
@@ -88,7 +89,8 @@ I recommend resetting all of the game's keybinds to defaults after installing th
 > [Read How](#how-to-install)**
 
 # Disabling UI Elements
-**Go to `APBGame\Config` open `DefaultEngine.ini` with Notepad and put `;` before any of these strings.**
+> [!CAUTION]
+> **It is no longer possible to disable the UI this way, currently there is no way to do so. I will still include the list for reference.**
 
 - **Top Left**
   - **`Notoriety Level` +GlobalDataStoreClasses="APBUserInterface.cUIDataStore_HUD_Heat"**
@@ -125,8 +127,10 @@ I recommend resetting all of the game's keybinds to defaults after installing th
 
 # Game Files Used
 - **[APBGame\Config]**
+  - APBCompat.ini - Graphic Settings
+  - APBMachineOptions.ini - Game Options, Video Settings
   - DefaultCompat.ini - Graphic Settings
-  - DefaultEngine.ini - Disable Bounty/Killsteak/Winstreak Notifications, Disable Disk Cache, Disable Login Screen Background
+  - DefaultEngine.ini - Disable Disk Cache, Disable Login Screen Background
   - DefaultGame.ini - Sound Emitters Priority, Disable NPC Ragdolls, Disable Magazine Casings Particles
   - DefaultInput.ini - Keybinds
   - DefaultMachineOptions.ini - Game Options, Video Settings
